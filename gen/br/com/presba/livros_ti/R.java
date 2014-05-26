@@ -16,15 +16,19 @@ public final class R {
         public static final int img_logo=0x7f020002;
     }
     public static final class id {
+        public static final int coverImageView=0x7f060006;
+        public static final int coverProgressBar=0x7f060005;
+        public static final int coverTextView=0x7f060007;
         public static final int imageView1=0x7f060003;
         public static final int progressBar1=0x7f060004;
-        public static final int resultTextView=0x7f060002;
+        public static final int resultGridView=0x7f060002;
         public static final int searchButton=0x7f060001;
         public static final int searchText=0x7f060000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_splash=0x7f030001;
+        public static final int include_search=0x7f030002;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

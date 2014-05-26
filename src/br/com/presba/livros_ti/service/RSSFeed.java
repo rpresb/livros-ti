@@ -32,7 +32,7 @@ public class RSSFeed extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-//		TextView rss = (TextView) findViewById(R.id.rss);
+		//TextView rss = (TextView) findViewById(R.id.rss);
 		try {
 			URL rssUrl = new URL("http://it-ebooks-api.info/v1/search/php%20mysql/page/1");
 			SAXParserFactory factory = SAXParserFactory.newInstance();
