@@ -19,7 +19,7 @@ public class Splash extends ActivityBase implements Runnable {
 	private void initialize() {
 		Handler handler = new Handler();
 
-		handler.postDelayed(Splash.this, 5000);
+		handler.postDelayed(Splash.this, 2500);
 	}
 
 	@Override
