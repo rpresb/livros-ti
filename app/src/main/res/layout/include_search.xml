@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingBottom="2dp">
+    android:paddingBottom="5dp">
 
     <LinearLayout
         android:id="@+id/item_search"
@@ -20,7 +20,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_launcher"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:scaleType="fitCenter" />
 
             <ProgressBar
                 android:id="@+id/coverProgressBar"
@@ -37,7 +38,8 @@
             android:maxLines="2"
             android:text="Carregando..."
             android:ellipsize="end"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:layout_marginLeft="3dp" />
 
     </LinearLayout>
 
@@ -45,7 +47,8 @@
         android:id="@+id/item_more"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/moreTextView"
@@ -57,5 +60,14 @@
             android:ellipsize="end"
             android:gravity="center" />
 
+        <ProgressBar
+            android:id="@+id/moreProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleSmall"
+            android:visibility="gone" />
+
     </LinearLayout>
+
 </LinearLayout>

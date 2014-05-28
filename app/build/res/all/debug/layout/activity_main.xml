@@ -1,14 +1,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/searchText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Search" >
+        android:hint="Search">
 
         <requestFocus />
     </EditText>
@@ -23,6 +23,11 @@
         android:id="@+id/resultGridView"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:numColumns="1" />
+        android:numColumns="1"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:persistentDrawingCache="scrolling"
+        android:scrollingCache="false" />
 
 </LinearLayout><!-- From: file:/rpresb/Projetos/livros-ti/app/src/main/res/layout/activity_main.xml -->

@@ -9,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -57,6 +59,12 @@ public class MainActivity extends ActivityBase {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == lastSearchAdapter.getCount() - 1) {
                     if (!lastSearchAdapter.getItem(position).has("ID")) {
+                        TextView moreTextView = (TextView) view.findViewById(R.id.moreTextView);
+                        ProgressBar moreProgressBar = (ProgressBar) view.findViewById(R.id.moreProgressBar);
+
+                        moreTextView.setVisibility(View.GONE);
+                        moreProgressBar.setVisibility(View.VISIBLE);
+
                         searchNextPage();
                     }
                 }
@@ -143,12 +151,13 @@ public class MainActivity extends ActivityBase {
 
                         }
                         if (obj != null) {
-                            lastSearchAdapter.items.put(obj);
+                            newItems.put(obj);
                         }
                     }
 
-                    addLoadMoreItem(lastSearchAdapter.items);
+                    addLoadMoreItem(newItems);
 
+                    lastSearchAdapter.items = newItems;
                     lastSearchAdapter.notifyDataSetChanged();
 
                 } else {
@@ -159,9 +168,6 @@ public class MainActivity extends ActivityBase {
 
                     MainActivity.this.resultGridView.setAdapter(lastSearchAdapter);
                 }
-
-                MainActivity.this.resultGridView.setVisibility(View.GONE);
-                MainActivity.this.resultGridView.setVisibility(View.VISIBLE);
             } else {
                 Toast.makeText(MainActivity.this, "Nada encontrado", Toast.LENGTH_SHORT).show();
             }

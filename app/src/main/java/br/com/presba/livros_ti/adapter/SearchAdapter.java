@@ -94,6 +94,9 @@ public class SearchAdapter extends BaseAdapter {
             if (!getItem(position).has("ID")) {
                 convertView.findViewById(R.id.item_search).setVisibility(View.GONE);
                 convertView.findViewById(R.id.item_more).setVisibility(View.VISIBLE);
+
+                convertView.findViewById(R.id.moreTextView).setVisibility(View.VISIBLE);
+                convertView.findViewById(R.id.moreProgressBar).setVisibility(View.GONE);
             } else {
                 convertView.findViewById(R.id.item_search).setVisibility(View.VISIBLE);
                 convertView.findViewById(R.id.item_more).setVisibility(View.GONE);
