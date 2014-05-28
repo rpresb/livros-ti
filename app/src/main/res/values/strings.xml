@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Livros de TI</string>
+    <string name="connection_error">Não foi possível estabelecer uma conexão com a Internet. Verifique as configurações de rede e tente novamente.</string>
+    <string name="attention">Atenção</string>
+
+</resources>
