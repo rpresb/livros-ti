@@ -1,5 +1,6 @@
 package br.com.presba.livros_ti.activity;
 
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -43,6 +44,8 @@ public class MainActivity extends ActivityBase {
 
             @Override
             public void onClick(View v) {
+                MainActivity.this.findViewById(R.id.loading).setVisibility(View.VISIBLE);
+
                 if (searchTask != null) {
                     searchTask.cancel(true);
                 }
@@ -91,8 +94,10 @@ public class MainActivity extends ActivityBase {
 
         EditText searchText = (EditText) findViewById(R.id.searchText);
 
+        String searchEncoded = Uri.encode(searchText.getText().toString());
+
         String url = String.format(Locale.getDefault(),
-                "http://it-ebooks-api.info/v1/search/%s/page/%d", searchText.getText().toString(),
+                "http://it-ebooks-api.info/v1/search/%s/page/%d", searchEncoded,
                 firstItem);
 
         searchTask = new RetrieveSearchTask();
@@ -172,6 +177,7 @@ public class MainActivity extends ActivityBase {
                 Toast.makeText(MainActivity.this, "Nada encontrado", Toast.LENGTH_SHORT).show();
             }
 
+            MainActivity.this.findViewById(R.id.loading).setVisibility(View.GONE);
             this.isLoading = false;
         }
 
