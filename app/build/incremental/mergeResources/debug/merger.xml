@@ -2,49 +2,49 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/rpresb/Projetos/livros-ti/app/src/main/res" >
+        <source path="C:\Projetos\Android\livros-ti\app\src\main\res" >
             <file
                 name="bg_splash"
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/drawable-hdpi/bg_splash.xml"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\drawable-hdpi\bg_splash.xml"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/drawable-hdpi/ic_launcher.png"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\drawable-hdpi\ic_launcher.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="img_logo"
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/drawable-hdpi/img_logo.png"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\drawable-hdpi\img_logo.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/drawable-mdpi/ic_launcher.png"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\drawable-mdpi\ic_launcher.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\drawable-xhdpi\ic_launcher.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="activity_main"
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/layout/activity_main.xml"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\layout\activity_main.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_splash"
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/layout/activity_splash.xml"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\layout\activity_splash.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="include_search"
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/layout/include_search.xml"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\layout\include_search.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/values/strings.xml"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\values\strings.xml"
                 qualifiers="" >
                 <string name="connection_error" >Não foi possível estabelecer uma conexão com a Internet. Verifique as configurações de rede e tente novamente.
                 </string>
@@ -54,7 +54,7 @@
                 </string>
             </file>
             <file
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/values/styles.xml"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\values\styles.xml"
                 qualifiers="" >
 
                 <style
@@ -85,7 +85,7 @@ true
                 </style>
             </file>
             <file
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/values-v11/styles.xml"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\values-v11\styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -96,7 +96,7 @@ true
                 </style>
             </file>
             <file
-                path="/rpresb/Projetos/livros-ti/app/src/main/res/values-v14/styles.xml"
+                path="C:\Projetos\Android\livros-ti\app\src\main\res\values-v14\styles.xml"
                 qualifiers="v14" >
 
                 <style
@@ -107,11 +107,11 @@ true
                 </style>
             </file>
         </source>
-        <source path="/rpresb/Projetos/livros-ti/app/build/res/rs/debug" />
-        <source path="/rpresb/Projetos/livros-ti/app/build/res/generated/debug" />
+        <source path="C:\Projetos\Android\livros-ti\app\build\res\rs\debug" />
+        <source path="C:\Projetos\Android\livros-ti\app\build\res\generated\debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/rpresb/Projetos/livros-ti/app/src/debug/res" />
+        <source path="C:\Projetos\Android\livros-ti\app\src\debug\res" />
     </dataSet>
 
 </merger>
