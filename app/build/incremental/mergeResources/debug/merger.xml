@@ -29,6 +29,11 @@
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
+                name="activity_book_detail"
+                path="/rpresb/Projetos/livros-ti/app/src/main/res/layout/activity_book_detail.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="activity_main"
                 path="/rpresb/Projetos/livros-ti/app/src/main/res/layout/activity_main.xml"
                 qualifiers=""

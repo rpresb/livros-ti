@@ -1,5 +1,6 @@
 package br.com.presba.livros_ti.activity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -39,12 +40,15 @@ public class MainActivity extends ActivityBase {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        resultGridView = (GridView) MainActivity.this.findViewById(R.id.resultGridView);
+
         Button searchButton = (Button) this.findViewById(R.id.searchButton);
         searchButton.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 MainActivity.this.findViewById(R.id.loading).setVisibility(View.VISIBLE);
+                MainActivity.this.resultGridView.setVisibility(View.GONE);
 
                 if (searchTask != null) {
                     searchTask.cancel(true);
@@ -55,21 +59,25 @@ public class MainActivity extends ActivityBase {
             }
         });
 
-        this.resultGridView = (GridView) MainActivity.this.findViewById(R.id.resultGridView);
-
-        this.resultGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        resultGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == lastSearchAdapter.getCount() - 1) {
-                    if (!lastSearchAdapter.getItem(position).has("ID")) {
-                        TextView moreTextView = (TextView) view.findViewById(R.id.moreTextView);
-                        ProgressBar moreProgressBar = (ProgressBar) view.findViewById(R.id.moreProgressBar);
+                if (!lastSearchAdapter.getItem(position).has("ID")) {
+                    TextView moreTextView = (TextView) view.findViewById(R.id.moreTextView);
+                    ProgressBar moreProgressBar = (ProgressBar) view.findViewById(R.id.moreProgressBar);
 
-                        moreTextView.setVisibility(View.GONE);
-                        moreProgressBar.setVisibility(View.VISIBLE);
+                    moreTextView.setVisibility(View.GONE);
+                    moreProgressBar.setVisibility(View.VISIBLE);
 
-                        searchNextPage();
+                    searchNextPage();
+                } else {
+                    Intent it = new Intent(MainActivity.this, DetailActivity.class);
+                    try {
+                        it.putExtra("BookID", lastSearchAdapter.getItem(position).getString("ID"));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
                     }
+                    startActivity(it);
                 }
             }
         });
@@ -178,6 +186,7 @@ public class MainActivity extends ActivityBase {
             }
 
             MainActivity.this.findViewById(R.id.loading).setVisibility(View.GONE);
+            MainActivity.this.resultGridView.setVisibility(View.VISIBLE);
             this.isLoading = false;
         }
 
