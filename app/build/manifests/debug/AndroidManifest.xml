@@ -1,5 +1,4 @@
-<!-- From: file:/C:/Projetos/Android/livros-ti/app/src/main/AndroidManifest.xml -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="br.com.presba.livros_ti">
+<!-- From: file:/rpresb/Projetos/livros-ti/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="br.com.presba.livros_ti">
 
     <uses-sdk android:minSdkVersion="12" android:targetSdkVersion="19"/>
 

@@ -25,6 +25,7 @@ import br.com.presba.livros_ti.R;
 import br.com.presba.livros_ti.adapter.SearchAdapter;
 import br.com.presba.livros_ti.base.ActivityBase;
 import br.com.presba.livros_ti.base.JSONManager;
+import br.com.presba.livros_ti.model.Book;
 
 public class MainActivity extends ActivityBase {
 
@@ -72,11 +73,15 @@ public class MainActivity extends ActivityBase {
                     searchNextPage();
                 } else {
                     Intent it = new Intent(MainActivity.this, DetailActivity.class);
-                    try {
-                        it.putExtra("BookID", lastSearchAdapter.getItem(position).getString("ID"));
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
+                    Book book = new Book(lastSearchAdapter.getItem(position));
+
+                    it.putExtra("BookID", book.getBookID());
+                    it.putExtra("Title", book.getTitle());
+                    it.putExtra("SubTitle", book.getSubTitle());
+                    it.putExtra("Description", book.getDescription());
+                    it.putExtra("Image", book.getImage());
+                    it.putExtra("ISBN", book.getIsbn());
+
                     startActivity(it);
                 }
             }

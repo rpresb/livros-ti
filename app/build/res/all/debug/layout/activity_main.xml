@@ -11,7 +11,7 @@
         android:lines="1"
         android:maxLines="1"
         android:singleLine="true"
-        android:hint="Search">
+        android:hint="@string/SearchHint">
 
         <requestFocus />
     </EditText>
@@ -25,7 +25,7 @@
             android:id="@+id/searchButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go" />
+            android:text="@string/GoLabel" />
 
         <ProgressBar
             android:id="@+id/loading"
@@ -47,4 +47,4 @@
         android:persistentDrawingCache="scrolling"
         android:scrollingCache="false" />
 
-</LinearLayout><!-- From: file:/C:/Projetos/Android/livros-ti/app/src/main/res/layout/activity_main.xml -->
+</LinearLayout><!-- From: file:/rpresb/Projetos/livros-ti/app/src/main/res/layout/activity_main.xml -->

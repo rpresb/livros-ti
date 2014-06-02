@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="C:\Projetos\Android\livros-ti\app\src\main\assets" />
+        <source path="/rpresb/Projetos/livros-ti/app/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="C:\Projetos\Android\livros-ti\app\src\debug\assets" />
+        <source path="/rpresb/Projetos/livros-ti/app/src/debug/assets" />
     </dataSet>
 
 </merger>

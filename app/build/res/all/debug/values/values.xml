@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/C:/Projetos/Android/livros-ti/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/rpresb/Projetos/livros-ti/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
+    <string name="GoLabel">Ir</string>
+    <string name="Loading">Carregando…</string>
+    <string name="SearchHint">Buscar</string>
     <string name="app_name">Livros de TI</string>
     <string name="attention">Atenção</string>
     <string name="connection_error">Não foi possível estabelecer uma conexão com a Internet. Verifique as configurações de rede e tente novamente.</string>
-    <!-- From: file:/C:/Projetos/Android/livros-ti/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/rpresb/Projetos/livros-ti/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">

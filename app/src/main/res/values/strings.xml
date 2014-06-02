@@ -4,4 +4,8 @@
     <string name="connection_error">Não foi possível estabelecer uma conexão com a Internet. Verifique as configurações de rede e tente novamente.</string>
     <string name="attention">Atenção</string>
 
+    <string name="Loading">Carregando…</string>
+    <string name="SearchHint">Buscar</string>
+    <string name="GoLabel">Ir</string>
+
 </resources>
