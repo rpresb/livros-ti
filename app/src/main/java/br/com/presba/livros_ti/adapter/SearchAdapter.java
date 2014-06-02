@@ -79,13 +79,15 @@ public class SearchAdapter extends BaseAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag();
 
-            switch (holder.retrieveImageTask.getStatus()) {
-                case PENDING:
-                case RUNNING:
-                    holder.retrieveImageTask.cancel(true);
-                    break;
-                case FINISHED:
-                    break;
+            if (holder.retrieveImageTask != null) {
+                switch (holder.retrieveImageTask.getStatus()) {
+                    case PENDING:
+                    case RUNNING:
+                        holder.retrieveImageTask.cancel(true);
+                        break;
+                    case FINISHED:
+                        break;
+                }
             }
         }
 
