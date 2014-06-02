@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/rpresb/Projetos/livros-ti/app/src/main/res/values-v14/styles.xml -->
+    <!-- From: file:/C:/Projetos/Android/livros-ti/app/src/main/res/values-v14/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
