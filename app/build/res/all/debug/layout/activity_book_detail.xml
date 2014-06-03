@@ -14,10 +14,11 @@
             android:padding="5dp">
 
             <ImageView
+                android:id="@+id/logoImageView"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:src="@drawable/img_logo"
-                android:scaleType="fitCenter" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_logo" />
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -39,9 +40,9 @@
                     android:textSize="15sp" />
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -54,15 +55,15 @@
                         android:id="@+id/isbnTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
                         android:text="9780596006303"
-                        android:textSize="15sp"
-                        android:layout_marginLeft="3dp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -75,15 +76,15 @@
                         android:id="@+id/authorTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
                         android:text="Lynn Beighley, Michael Morrison"
-                        android:textSize="15sp"
-                        android:layout_marginLeft="3dp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -96,15 +97,15 @@
                         android:id="@+id/publisherTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
                         android:text="O'Reilly Media"
-                        android:textSize="15sp"
-                        android:layout_marginLeft="3dp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -117,15 +118,15 @@
                         android:id="@+id/yearTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
                         android:text="2009"
-                        android:textSize="15sp"
-                        android:layout_marginLeft="3dp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -138,17 +139,26 @@
                         android:id="@+id/pageTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
                         android:text="300"
-                        android:textSize="15sp"
-                        android:layout_marginLeft="3dp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <Button
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
+                    android:id="@+id/downloadButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
                     android:text="Download" />
+
+                <Button
+                    android:id="@+id/openButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Abrir" />
             </LinearLayout>
 
         </LinearLayout>

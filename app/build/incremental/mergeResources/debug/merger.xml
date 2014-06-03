@@ -55,13 +55,13 @@
                 </string>
                 <string name="attention" >Atenção
                 </string>
-                <string name="SearchHint" >Buscar
-                </string>
                 <string name="app_name" >Livros de TI
                 </string>
-                <string name="Loading" >Carregando…
+                <string name="SearchHint" >Buscar
                 </string>
                 <string name="GoLabel" >Ir
+                </string>
+                <string name="Loading" >Carregando…
                 </string>
             </file>
             <file

@@ -23,7 +23,6 @@ public class CacheManager {
         myDir = new File(root + "/livros_ti/covers");
         myDir.mkdirs();
 
-
         final int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
         final int cacheSize = maxMemory / 8;
 
