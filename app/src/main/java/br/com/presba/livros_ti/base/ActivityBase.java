@@ -1,6 +1,7 @@
 package br.com.presba.livros_ti.base;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -26,24 +27,48 @@ public class ActivityBase extends Activity {
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
         screenWidth = metrics.widthPixels;
+    }
 
+    @Override
+    public void setContentView(int layoutResID) {
+        super.setContentView(layoutResID);
         prepareTopBar();
     }
 
     private void prepareTopBar() {
-        View topbar = (View) findViewById(R.id.topbar);
+        View topbar = findViewById(R.id.topbar);
 
         if (topbar != null) {
-            ImageButton menuSearch = (ImageButton) findViewById(R.id.menuSearch);
-            ImageButton menuDownloaded = (ImageButton) findViewById(R.id.menuDownloaded);
-            TextView topBarTitle = (TextView) findViewById(R.id.topBarTitle);
+            ImageButton menuSearch = (ImageButton) topbar.findViewById(R.id.menuSearch);
+            ImageButton menuDownloaded = (ImageButton) topbar.findViewById(R.id.menuDownloaded);
+            TextView topBarTitle = (TextView) topbar.findViewById(R.id.topBarTitle);
 
+            final Activity currentActivity = this;
             if (this instanceof DownloadedActivity) {
                 menuSearch.setVisibility(View.VISIBLE);
                 topBarTitle.setText("Livros Gravados");
+
+                menuSearch.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent it = new Intent(currentActivity, MainActivity.class);
+                        startActivity(it);
+                        finish();
+                    }
+                });
+
             } else if (this instanceof MainActivity) {
                 menuDownloaded.setVisibility(View.VISIBLE);
                 topBarTitle.setText("Buscar");
+
+                menuDownloaded.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent it = new Intent(currentActivity, DownloadedActivity.class);
+                        startActivity(it);
+                        finish();
+                    }
+                });
             }
         }
     }

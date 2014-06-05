@@ -54,37 +54,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DetailActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/DetailActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="5115">
-              <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3072#3112#0" expanded="true" />
-                <element signature="e#3153#3193#0" expanded="true" />
-                <element signature="e#3229#3269#0" expanded="true" />
-                <element signature="e#3305#3345#0" expanded="true" />
-                <element signature="e#3943#4114#0" expanded="true" />
-                <element signature="e#4103#4104#0" expanded="true" />
-                <element signature="e#4156#4322#0" expanded="true" />
-                <element signature="e#4311#4312#0" expanded="true" />
-                <element signature="e#5595#5783#0" expanded="true" />
-                <element signature="e#5772#5773#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ActivityBase.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/base/ActivityBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36626506" vertical-offset="388" max-vertical-offset="1050">
-              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.63746226" vertical-offset="719" max-vertical-offset="1425">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1847#1848#0" expanded="true" />
-                <element signature="e#1880#1881#0" expanded="true" />
+                <element signature="e#1682#1992#0" expanded="true" />
+                <element signature="e#1973#1974#0" expanded="true" />
+                <element signature="e#2209#2525#0" expanded="true" />
+                <element signature="e#2506#2507#0" expanded="true" />
+                <element signature="e#2787#2788#0" expanded="true" />
+                <element signature="e#2820#2821#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,6 +77,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="2685">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="include_top_menu.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_top_menu.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.5925927" vertical-offset="491" max-vertical-offset="900">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -784,12 +779,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/Splash.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/adapter/DownloadedAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/DownloadedActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/include_top_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/util/DBAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/DetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_book_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_downloaded.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/DetailActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/include_top_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/base/ActivityBase.java" />
       </list>
     </option>
@@ -1073,40 +1068,6 @@
               <option name="myItemId" value="livros_ti" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="livros-ti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="livros-ti" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="livros_ti" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1139,40 +1100,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="livros-ti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="livros-ti" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="livros_ti" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1494,7 +1421,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21428572" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4544073" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4544073" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1502,7 +1429,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26332796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32674772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32674772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1528,46 +1455,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/DetailActivity.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/base/ActivityBase.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_search.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1326">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="646">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3090">
@@ -1859,29 +1750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_top_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3482587" vertical-offset="120" max-vertical-offset="870">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="40" />
-          <folding>
-            <element signature="e#1024#1042#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/DownloadedActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45238096" vertical-offset="0" max-vertical-offset="945">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="e#1860#1861#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/adapter/DownloadedAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54761904" vertical-offset="15" max-vertical-offset="645">
@@ -1899,37 +1767,6 @@
             <element signature="e#3220#3221#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/DetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="5115">
-          <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3072#3112#0" expanded="true" />
-            <element signature="e#3153#3193#0" expanded="true" />
-            <element signature="e#3229#3269#0" expanded="true" />
-            <element signature="e#3305#3345#0" expanded="true" />
-            <element signature="e#3943#4114#0" expanded="true" />
-            <element signature="e#4103#4104#0" expanded="true" />
-            <element signature="e#4156#4322#0" expanded="true" />
-            <element signature="e#4311#4312#0" expanded="true" />
-            <element signature="e#5595#5783#0" expanded="true" />
-            <element signature="e#5772#5773#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_book_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="2685">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_search.xml">
@@ -1957,14 +1794,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file:///app/android/sources/android-19/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34366196" vertical-offset="12133" max-vertical-offset="79035">
-          <caret line="918" column="0" selection-start-line="918" selection-start-column="0" selection-end-line="918" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_downloaded.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4398827" vertical-offset="0" max-vertical-offset="420">
@@ -1976,14 +1805,95 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/base/ActivityBase.java">
+    <entry file="file:///app/android/sources/android-19/com/android/internal/os/ZygoteInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36626506" vertical-offset="388" max-vertical-offset="1050">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.24456522" vertical-offset="0" max-vertical-offset="11535">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///app/android/sources/android-19/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33239436" vertical-offset="27002" max-vertical-offset="79035">
+          <caret line="1927" column="16" selection-start-line="1927" selection-start-column="16" selection-end-line="1927" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///app/android/sources/android-19/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5859155" vertical-offset="28862" max-vertical-offset="72855">
+          <caret line="2100" column="45" selection-start-line="2100" selection-start-column="45" selection-end-line="2100" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_book_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="2685">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/DetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6404834" vertical-offset="1738" max-vertical-offset="5115">
+          <caret line="134" column="19" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-            <element signature="e#1880#1881#0" expanded="true" />
+            <element signature="e#3072#3112#0" expanded="true" />
+            <element signature="e#3153#3193#0" expanded="true" />
+            <element signature="e#3229#3269#0" expanded="true" />
+            <element signature="e#3305#3345#0" expanded="true" />
+            <element signature="e#3943#4114#0" expanded="true" />
+            <element signature="e#4103#4104#0" expanded="true" />
+            <element signature="e#4156#4322#0" expanded="true" />
+            <element signature="e#4311#4312#0" expanded="true" />
+            <element signature="e#5595#5783#0" expanded="true" />
+            <element signature="e#5772#5773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/activity/DownloadedActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18126889" vertical-offset="345" max-vertical-offset="945">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding>
+            <element signature="e#913#1871#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_top_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5925927" vertical-offset="491" max-vertical-offset="900">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/presba/livros_ti/base/ActivityBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63746226" vertical-offset="719" max-vertical-offset="1425">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1682#1992#0" expanded="true" />
+            <element signature="e#1973#1974#0" expanded="true" />
+            <element signature="e#2209#2525#0" expanded="true" />
+            <element signature="e#2506#2507#0" expanded="true" />
+            <element signature="e#2787#2788#0" expanded="true" />
+            <element signature="e#2820#2821#0" expanded="true" />
           </folding>
         </state>
       </provider>
