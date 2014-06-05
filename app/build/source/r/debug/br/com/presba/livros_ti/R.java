@@ -16,35 +16,41 @@ public final class R {
         public static final int img_logo=0x7f020002;
     }
     public static final class id {
-        public static final int authorTextView=0x7f060004;
-        public static final int coverImageView=0x7f060011;
-        public static final int coverProgressBar=0x7f060012;
-        public static final int coverTextView=0x7f060013;
-        public static final int descriptionTextView=0x7f060002;
-        public static final int downloadButton=0x7f060008;
-        public static final int imageView1=0x7f06000e;
-        public static final int isbnTextView=0x7f060003;
-        public static final int item_more=0x7f060014;
-        public static final int item_search=0x7f060010;
-        public static final int loading=0x7f06000c;
-        public static final int logoImageView=0x7f060000;
-        public static final int moreProgressBar=0x7f060016;
-        public static final int moreTextView=0x7f060015;
-        public static final int openButton=0x7f060009;
-        public static final int pageTextView=0x7f060007;
-        public static final int progressBar1=0x7f06000f;
-        public static final int publisherTextView=0x7f060005;
-        public static final int resultGridView=0x7f06000d;
-        public static final int searchButton=0x7f06000b;
-        public static final int searchText=0x7f06000a;
-        public static final int titleTextView=0x7f060001;
-        public static final int yearTextView=0x7f060006;
+        public static final int authorTextView=0x7f060005;
+        public static final int coverImageView=0x7f060012;
+        public static final int coverProgressBar=0x7f060013;
+        public static final int coverTextView=0x7f060014;
+        public static final int descriptionTextView=0x7f060003;
+        public static final int downloadButton=0x7f060009;
+        public static final int imageView1=0x7f06000f;
+        public static final int isbnTextView=0x7f060004;
+        public static final int item_more=0x7f060015;
+        public static final int item_search=0x7f060011;
+        public static final int loading=0x7f06000e;
+        public static final int logoImageView=0x7f060001;
+        public static final int menuDownloaded=0x7f06001a;
+        public static final int menuSearch=0x7f060019;
+        public static final int moreProgressBar=0x7f060017;
+        public static final int moreTextView=0x7f060016;
+        public static final int openButton=0x7f06000a;
+        public static final int pageTextView=0x7f060008;
+        public static final int progressBar1=0x7f060010;
+        public static final int publisherTextView=0x7f060006;
+        public static final int resultGridView=0x7f06000b;
+        public static final int searchButton=0x7f06000d;
+        public static final int searchText=0x7f06000c;
+        public static final int titleTextView=0x7f060002;
+        public static final int topBarTitle=0x7f060018;
+        public static final int topbar=0x7f060000;
+        public static final int yearTextView=0x7f060007;
     }
     public static final class layout {
         public static final int activity_book_detail=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_splash=0x7f030002;
-        public static final int include_search=0x7f030003;
+        public static final int activity_downloaded=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_splash=0x7f030003;
+        public static final int include_search=0x7f030004;
+        public static final int include_top_menu=0x7f030005;
     }
     public static final class string {
         public static final int GoLabel=0x7f040000;

@@ -1,7 +1,6 @@
 package br.com.presba.livros_ti.activity;
 
 import android.app.ProgressDialog;
-import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -34,6 +33,7 @@ import br.com.presba.livros_ti.base.ActivityBase;
 import br.com.presba.livros_ti.base.JSONManager;
 import br.com.presba.livros_ti.model.Book;
 import br.com.presba.livros_ti.util.CacheManager;
+import br.com.presba.livros_ti.util.DBAdapter;
 
 public class DetailActivity extends ActivityBase {
 
@@ -47,49 +47,65 @@ public class DetailActivity extends ActivityBase {
     private Button openButton;
     private ProgressDialog mProgressDialog;
     private ImageView logoImageView;
+    private TextView titleTextView;
+    private TextView isbnTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_detail);
 
-        Bundle bundle = getIntent().getExtras();
-
-        book = new Book(bundle.getLong("BookID"),
-                bundle.getString("Title"),
-                bundle.getString("SubTitle"),
-                bundle.getString("Description"),
-                bundle.getString("Image"),
-                bundle.getString("ISBN"));
-
-        TextView titleTextView = (TextView) findViewById(R.id.titleTextView);
-        titleTextView.setText(book.getTitle());
-
+        titleTextView = (TextView) findViewById(R.id.titleTextView);
         descriptionTextView = (TextView) findViewById(R.id.descriptionTextView);
-        descriptionTextView.setText(book.getDescription());
-
-        TextView isbnTextView = (TextView) findViewById(R.id.isbnTextView);
-        isbnTextView.setText(book.getIsbn());
-
+        isbnTextView = (TextView) findViewById(R.id.isbnTextView);
         authorTextView = (TextView) findViewById(R.id.authorTextView);
-        authorTextView.setText(getResources().getText(R.string.Loading));
-
         publisherTextView = (TextView) findViewById(R.id.publisherTextView);
-        publisherTextView.setText(getResources().getText(R.string.Loading));
-
         yearTextView = (TextView) findViewById(R.id.yearTextView);
-        yearTextView.setText(getResources().getText(R.string.Loading));
-
         pageTextView = (TextView) findViewById(R.id.pageTextView);
-        pageTextView.setText(getResources().getText(R.string.Loading));
-
         downloadButton = (Button) findViewById(R.id.downloadButton);
-        downloadButton.setVisibility(View.GONE);
-
         openButton = (Button) findViewById(R.id.openButton);
-        openButton.setVisibility(View.GONE);
-
         logoImageView = (ImageView) findViewById(R.id.logoImageView);
+
+        loadBook();
+    }
+
+    private void loadBook() {
+        Bundle bundle = getIntent().getExtras();
+        DBAdapter db = new DBAdapter(this);
+        try {
+            db.open();
+            setBook(db.getBook(bundle.getLong("BookID")));
+        } finally {
+            db.close();
+        }
+
+        if (book == null) {
+            book = new Book(bundle.getLong("BookID"),
+                    bundle.getString("Title"),
+                    bundle.getString("SubTitle"),
+                    bundle.getString("Description"),
+                    bundle.getString("Image"),
+                    bundle.getString("ISBN"));
+
+            authorTextView.setText(getResources().getText(R.string.Loading));
+            publisherTextView.setText(getResources().getText(R.string.Loading));
+            yearTextView.setText(getResources().getText(R.string.Loading));
+            pageTextView.setText(getResources().getText(R.string.Loading));
+
+            downloadButton.setVisibility(View.GONE);
+            openButton.setVisibility(View.GONE);
+
+            String url = String.format(Locale.getDefault(),
+                    "http://it-ebooks-api.info/v1/book/%d", book.getBookID());
+            new RetrieveBookTask().execute(url);
+        } else {
+            openButton.setVisibility(View.VISIBLE);
+            showDetail();
+        }
+
+        titleTextView.setText(book.getTitle());
+        descriptionTextView.setText(book.getDescription());
+        isbnTextView.setText(book.getIsbn());
 
         downloadButton.setOnClickListener(new Button.OnClickListener() {
             @Override
@@ -104,10 +120,6 @@ public class DetailActivity extends ActivityBase {
                 DetailActivity.this.openBook();
             }
         });
-
-        String url = String.format(Locale.getDefault(),
-                "http://it-ebooks-api.info/v1/book/%d", book.getBookID());
-        new RetrieveBookTask().execute(url);
 
     }
 
@@ -130,10 +142,7 @@ public class DetailActivity extends ActivityBase {
         target.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 
         Intent intent = Intent.createChooser(target, "Open File");
-        try {
-            startActivity(intent);
-        } catch (ActivityNotFoundException e) {
-        }
+        startActivity(intent);
     }
 
     private void startDownload() {
@@ -166,14 +175,18 @@ public class DetailActivity extends ActivityBase {
         openButton.setVisibility(View.GONE);
         downloadButton.setVisibility(View.GONE);
 
+        if (getBook().getImageBitmap() != null) {
+            logoImageView.setImageBitmap(getBook().getImageBitmap());
+        } else {
+            Bitmap cachedBmp = new CacheManager().getBitmapFromSD(getBook().getBookID());
+            logoImageView.setImageBitmap(cachedBmp);
+        }
+
         if (getBookFile().exists()) {
             openButton.setVisibility(View.VISIBLE);
         } else {
             downloadButton.setVisibility(View.VISIBLE);
         }
-
-        Bitmap cachedBmp = new CacheManager().getBitmapFromSD(getBook().getBookID());
-        logoImageView.setImageBitmap(cachedBmp);
     }
 
     class RetrieveBookTask extends AsyncTask<String, Void, Book> {
@@ -201,7 +214,7 @@ public class DetailActivity extends ActivityBase {
         }
     }
 
-    private class DownloadTask extends AsyncTask<String, Integer, String> {
+    class DownloadTask extends AsyncTask<String, Integer, String> {
 
         public long bookId;
         private Context context;
@@ -243,7 +256,7 @@ public class DetailActivity extends ActivityBase {
                 File myDir = new File(root + "/livros_ti/books");
                 myDir.mkdirs();
 
-                output = new FileOutputStream(myDir.getAbsoluteFile() + "/" + this.bookId + ".pdf");
+                output = new FileOutputStream(myDir.getAbsoluteFile() + "/tmp.pdf");
 
                 byte data[] = new byte[4096];
                 long total = 0;
@@ -301,9 +314,23 @@ public class DetailActivity extends ActivityBase {
         protected void onPostExecute(String result) {
             mWakeLock.release();
             DetailActivity.this.mProgressDialog.dismiss();
-            if (result != null)
+            if (result != null) {
                 Toast.makeText(context, "Download error: " + result, Toast.LENGTH_LONG).show();
-            else {
+            } else {
+                String root = Environment.getExternalStorageDirectory().toString();
+                File tmp = new File(root + "/livros_ti/books/tmp.pdf");
+                File book = new File(root + "/livros_ti/books/" + this.bookId + ".pdf");
+                tmp.renameTo(book);
+
+                // Save at database
+                DBAdapter db = new DBAdapter(this.context);
+                try {
+                    db.open();
+                    db.saveBook(getBook());
+                } finally {
+                    db.close();
+                }
+
                 Toast.makeText(context, "File downloaded", Toast.LENGTH_SHORT).show();
                 DetailActivity.this.showDetail();
             }

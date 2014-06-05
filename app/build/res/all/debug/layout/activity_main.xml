@@ -3,38 +3,51 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/searchText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:lines="1"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:hint="@string/SearchHint">
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/include_top_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 
-        <requestFocus />
-    </EditText>
-
-    <LinearLayout
+    <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:stretchColumns="1">
 
-        <Button
-            android:id="@+id/searchButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/GoLabel" />
+        <TableRow>
 
-        <ProgressBar
-            android:id="@+id/loading"
-            style="?android:attr/progressBarStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:visibility="gone" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:ems="10"
+                android:hint="@string/SearchHint"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true">
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="@string/GoLabel" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+        </TableRow>
+
+    </TableLayout>
 
     <GridView
         android:id="@+id/resultGridView"

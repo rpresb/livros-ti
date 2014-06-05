@@ -1,5 +1,7 @@
 package br.com.presba.livros_ti.model;
 
+import android.graphics.Bitmap;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -15,6 +17,7 @@ public class Book {
     private String page;
     private String publisher;
     private String download;
+    private Bitmap imageBitmap;
 
     public Book(JSONObject obj) {
 
@@ -154,5 +157,13 @@ public class Book {
 
     public void setPublisher(String publisher) {
         this.publisher = publisher;
+    }
+
+    public Bitmap getImageBitmap() {
+        return imageBitmap;
+    }
+
+    public void setImageBitmap(Bitmap imageBitmap) {
+        this.imageBitmap = imageBitmap;
     }
 }

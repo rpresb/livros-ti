@@ -117,6 +117,16 @@ true
                     <!-- API 14 theme customizations can go here. -->
                 </style>
             </file>
+            <file
+                name="activity_downloaded"
+                path="/rpresb/Projetos/livros-ti/app/src/main/res/layout/activity_downloaded.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="include_top_menu"
+                path="/rpresb/Projetos/livros-ti/app/src/main/res/layout/include_top_menu.xml"
+                qualifiers=""
+                type="layout" />
         </source>
         <source path="/rpresb/Projetos/livros-ti/app/build/res/rs/debug" />
         <source path="/rpresb/Projetos/livros-ti/app/build/res/generated/debug" />

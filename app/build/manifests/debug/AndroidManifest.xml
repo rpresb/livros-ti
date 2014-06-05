@@ -17,6 +17,7 @@
         </activity>
         <activity android:name="br.com.presba.livros_ti.activity.MainActivity"/>
         <activity android:name="br.com.presba.livros_ti.activity.DetailActivity"/>
+        <activity android:name="br.com.presba.livros_ti.activity.DownloadedActivity"/>
     </application>
 
 </manifest>

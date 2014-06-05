@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/include_top_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/resultGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:numColumns="1"
+        android:persistentDrawingCache="scrolling"
+        android:scrollingCache="false" />
+
+</LinearLayout>
